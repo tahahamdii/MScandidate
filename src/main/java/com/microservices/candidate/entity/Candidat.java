@@ -15,6 +15,8 @@ public class Candidat implements Serializable {
     private int id;
     private String nom,prenom,email;
 
+
+
     public int getId() {
         return id;
     }
@@ -49,8 +51,10 @@ public class Candidat implements Serializable {
     public Candidat(){
         super();
     }
-    public Candidat(String nom){
+    public Candidat(String nom,String prenom,String email){
         super();
         this.nom = nom ;
+        this.email=email;
+        this.prenom=prenom;
     }
 }
